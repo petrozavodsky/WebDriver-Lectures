@@ -17,7 +17,7 @@
         By elementLocator = By.id("#element_id");
         WebElement element = driver.findElement(elementLocator));
 Или более кратко:
-        WebElement element = driver.findElement(By.id("#element_id")));
+        WebElement element = driver.findElement(By.id("#element_id"));
 После нахождения элемента, кликнем по нему:
         element.click();
 Далее следует совокупность похожих действий, как того требует сценарий.
@@ -30,7 +30,7 @@
 
 Следует отметить, что для поиска элементов доступно два метода:
 1. Первый - найдет только первый элемент, удовлетворяющий локатору:
-        WebElement element = driver.findElement(By.id("#element_id")));
+        WebElement element = driver.findElement(By.id("#element_id"));
 2. Второй - вернет весь список элементов, удовлетворяющих запросу:
         List<WebElement> elements = driver.findElements(By.name("elements_name"))
 
